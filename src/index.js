@@ -20,14 +20,6 @@ app.get("/",(req,res)=>
         res.send("Api Is running.......");
     })
 
-app.use(cors());
-
-app.get("/", (req, res) => {
-
-    res.setHeader("Access-control-allow-credentials", "true");
-    res.send("Api Is running.......");
-});
-
 
 app.get('/contact', (req, res) => {
     res.render('contactus')
