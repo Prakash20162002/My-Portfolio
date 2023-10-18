@@ -1,6 +1,7 @@
 const express = require("express")
 const path = require("path")
 const app = express()
+const cors=require("cors")
 const LogInCollection = require("./mongo")
 const port = process.env.PORT || 3000
 app.use(express.json())
@@ -61,5 +62,5 @@ app.post('/contact', async (req, res) => {
 })
 
 app.listen(process.env.PORT || port, () => {
-    console.log('port connected');
+    console.log('Port Connected',port);
 })
