@@ -14,10 +14,10 @@ app.use(express.static(publicPath))
 app.use(cors());
 
 app.get("/",(req,res)=>
-    {(
+    {
         res.setHeader("Access-control-allow-credentials","true");
         res.send("Api Is running.......");
-    )}
+    })
 
 app.use(cors());
 
