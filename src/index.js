@@ -11,6 +11,13 @@ console.log(publicPath);
 app.set('view engine', 'hbs')
 app.set('views', tempelatePath)
 app.use(express.static(publicPath))
+app.use(cors());
+
+app.get("/",(req,res)=>
+    {(
+        res.setHeader("Access-control-allow-credentials","true");
+        res.send("Api Is running.......");
+    )}
 
 
 
