@@ -42,10 +42,3 @@ ScrollReveal().reveal('.home-img, .services-container,.portfolio-box,.contact fo
 ScrollReveal().reveal('.home-content h1,.about-img', { origin:'left' });
 ScrollReveal().reveal('.home-content p,.about-content', { origin:'right'});
 
-const typed = new Typed('.multipletext', {
-    Strings:['Videographer'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-});
