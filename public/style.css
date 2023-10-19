@@ -625,12 +625,13 @@ margin: .7rem 0;
         background:#223843;
         border-top: .1rem solid rgb(0,0,0,.2);
         box-shadow: 0 .5rem 1rem rgb(0,0,0,.2);
-        /* display: none; */
+        display: none;
     }
-    .navbar .active
+    .navbar.active
     {
         display: block;
     }
+   
     .navbar a
     {
         display: block;
